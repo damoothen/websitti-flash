@@ -11,6 +11,9 @@
     <!-- Bootstrap -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../bower_components/animate.css/animate.min.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -152,6 +155,8 @@
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Noty -->
+    <script src="../bower_components/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
 
     <script src="../src/js/jquery.flash.js"></script>
 
@@ -160,19 +165,19 @@
 
             $('#success').click(function(e){
                 e.preventDefault();
-                $.flash();
+                flash('success', 'This is a success flash', {timeout: 2000});
             });
             $('#error').click(function(e){
                 e.preventDefault();
-                alert('error');
+                flash('error', 'This is an error flash');
             });
             $('#alert').click(function(e){
                 e.preventDefault();
-                alert('alert');
+                flash('alert', 'This is an alert flash');
             });
             $('#info').click(function(e){
                 e.preventDefault();
-                alert('info');
+                flash('info', 'This is an information flash');
             });
 
 
