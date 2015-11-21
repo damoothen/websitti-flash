@@ -13,7 +13,7 @@ module.exports = function (grunt) {
         uglify: {
             min: {
                 files: {
-                    'dist/js/jquery.flash.min.js': ['src/js/jquery.flash.js']
+                    'dist/js/flash.min.js': ['src/js/flash.js']
                 }
             }
         },
